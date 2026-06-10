@@ -40,8 +40,9 @@ body { font-family:'DM Sans',sans-serif; background:var(--cream); color:var(--in
 .intro-h1 { font-family:'Cormorant Garamond',serif; font-size:clamp(28px,5vw,46px); font-weight:700; line-height:1.15; color:var(--navy); margin-bottom:6px; }
 .intro-h1 em { font-style:italic; color:var(--gold); }
 .intro-h1-hi { font-family:'DM Sans',sans-serif; font-size:clamp(15px,2.5vw,20px); font-weight:400; color:var(--muted); margin-bottom:16px; line-height:1.4; }
+/* CHANGED: was 14px / 12px — now both same size */
 .intro-sub-hi { font-size:14px; color:var(--muted); line-height:1.75; margin-bottom:4px; max-width:520px; }
-.intro-sub-en { font-size:12px; color:#9A8A76; line-height:1.65; margin-bottom:32px; max-width:520px; }
+.intro-sub-en { font-size:14px; color:#9A8A76; line-height:1.65; margin-bottom:32px; max-width:520px; }
 
 .stats-strip { background:var(--navy); display:flex; margin-bottom:32px; }
 .stat-item { flex:1; padding:18px 14px; text-align:center; border-right:1px solid rgba(255,255,255,.06); }
@@ -53,8 +54,9 @@ body { font-family:'DM Sans',sans-serif; background:var(--cream); color:var(--in
 .gate-card { background:white; border:1px solid var(--border); border-top:4px solid var(--gold); padding:32px 28px; margin-bottom:20px; }
 .gate-h3-hi { font-family:'Cormorant Garamond',serif; font-size:20px; font-weight:600; color:var(--navy); margin-bottom:2px; }
 .gate-h3-en { font-size:12px; color:var(--muted); margin-bottom:18px; }
+/* CHANGED: both 13px */
 .gate-desc-hi { font-size:13px; color:var(--muted); line-height:1.65; margin-bottom:4px; }
-.gate-desc-en { font-size:11px; color:#9A8A76; line-height:1.6; margin-bottom:24px; }
+.gate-desc-en { font-size:13px; color:#9A8A76; line-height:1.6; margin-bottom:24px; }
 .field-grid { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:14px; }
 .field-lbl-hi { display:block; font-size:12px; font-weight:600; color:var(--navy); margin-bottom:2px; }
 .field-lbl-en { display:block; font-size:10px; color:var(--muted); margin-bottom:5px; }
@@ -91,8 +93,8 @@ body { font-family:'DM Sans',sans-serif; background:var(--cream); color:var(--in
 .q-dim::before { content:'·'; margin-right:8px; }
 /* Hindi first — larger */
 .q-text-hi { font-family:'DM Sans',sans-serif; font-size:18px; font-weight:600; color:#F5EFE6; line-height:1.5; margin-bottom:8px; }
-/* English second — smaller, muted */
-.q-text-en { font-family:'Cormorant Garamond',serif; font-size:14px; font-style:italic; color:rgba(255,255,255,.4); line-height:1.5; font-weight:400; }
+/* CHANGED: English now same size as Hindi — was 14px italic */
+.q-text-en { font-family:'DM Sans',sans-serif; font-size:18px; font-weight:400; color:rgba(255,255,255,.55); line-height:1.5; }
 
 /* RATING SCALE */
 .scale-wrap { padding:28px 28px 24px; }
@@ -109,8 +111,9 @@ body { font-family:'DM Sans',sans-serif; background:var(--cream); color:var(--in
 .scale-btn.sel-4 { background:#2A7A5A; border-color:#2A7A5A; color:white; transform:translateY(-2px); }
 .scale-btn.sel-5 { background:#1E5C1E; border-color:#1E5C1E; color:white; transform:translateY(-2px); }
 .scale-desc-row { display:flex; justify-content:space-between; gap:4px; margin-top:6px; }
+/* CHANGED: both scale label rows now 10px / 10px — was 10px / 8.5px */
 .scale-desc-hi { flex:1; text-align:center; font-size:10px; color:#666; line-height:1.35; padding:0 2px; font-weight:500; }
-.scale-desc-en { flex:1; text-align:center; font-size:8.5px; color:#AAA; line-height:1.3; padding:0 2px; margin-top:2px; }
+.scale-desc-en { flex:1; text-align:center; font-size:10px; color:#AAA; line-height:1.3; padding:0 2px; margin-top:2px; }
 .scale-desc-hi:first-child,.scale-desc-en:first-child { text-align:left; }
 .scale-desc-hi:last-child,.scale-desc-en:last-child { text-align:right; }
 .scale-labels-wrap { display:flex; flex-direction:column; gap:1px; }
@@ -144,10 +147,12 @@ body { font-family:'DM Sans',sans-serif; background:var(--cream); color:var(--in
 .gauge-labels { display:flex; justify-content:space-between; font-size:8px; color:rgba(255,255,255,.22); }
 
 .band-card { padding:22px 26px; border-left:5px solid; margin-bottom:18px; }
+/* CHANGED: both band headlines now 16px */
 .band-headline-hi { font-size:16px; font-weight:600; line-height:1.4; margin-bottom:4px; }
-.band-headline-en { font-family:'Cormorant Garamond',serif; font-size:14px; font-style:italic; opacity:.7; margin-bottom:10px; }
+.band-headline-en { font-size:16px; font-weight:400; opacity:.7; margin-bottom:10px; }
+/* CHANGED: both band descriptions now 13px */
 .band-desc-hi { font-size:13px; line-height:1.75; color:var(--muted); margin-bottom:4px; }
-.band-desc-en { font-size:12px; line-height:1.65; color:#9A8A76; }
+.band-desc-en { font-size:13px; line-height:1.65; color:#9A8A76; }
 
 .dim-section { background:white; border:1px solid var(--border); padding:24px 28px; margin-bottom:18px; }
 .section-label { font-size:10px; font-weight:600; letter-spacing:.2em; text-transform:uppercase; color:var(--navy); margin-bottom:18px; display:flex; align-items:center; gap:10px; }
@@ -182,7 +187,10 @@ body { font-family:'DM Sans',sans-serif; background:var(--cream); color:var(--in
 .interest-card::before { content:'STEP 1'; position:absolute; top:-12px; left:20px; background:var(--gold); color:var(--ink); font-size:9px; font-weight:700; letter-spacing:.2em; padding:3px 10px; }
 .interest-card h3-hi { display:block; font-family:'Cormorant Garamond',serif; font-size:20px; font-weight:600; color:var(--navy); margin-bottom:2px; }
 .interest-card h3-en { display:block; font-size:12px; color:var(--muted); margin-bottom:16px; }
-.interest-card > p { font-size:13px; color:var(--muted); margin-bottom:18px; line-height:1.6; }
+/* INTEREST DESC — bilingual paragraph block */
+.interest-desc { background:var(--warm); border-left:3px solid var(--gold); padding:14px 16px; margin-bottom:18px; }
+.interest-desc-hi { font-size:14px; font-weight:500; color:var(--navy); line-height:1.6; margin-bottom:4px; }
+.interest-desc-en { font-size:14px; font-weight:400; color:var(--muted); line-height:1.6; }
 .check-list { display:flex; flex-direction:column; gap:10px; }
 .check-item { display:flex; align-items:flex-start; gap:13px; padding:14px 16px; border:1.5px solid var(--border); cursor:pointer; transition:all .15s; user-select:none; }
 .check-item:hover { border-color:var(--gold); background:var(--goldLt); }
@@ -191,8 +199,9 @@ body { font-family:'DM Sans',sans-serif; background:var(--cream); color:var(--in
 .check-item.checked .check-box { background:var(--navy); border-color:var(--navy); }
 .check-tick { display:none; color:white; font-size:13px; font-weight:700; line-height:1; }
 .check-item.checked .check-tick { display:block; }
-.check-hi { font-size:14px; font-weight:600; color:var(--ink); margin-bottom:2px; }
-.check-en { font-size:11px; color:var(--muted); line-height:1.45; }
+/* CHANGED: both check labels now 14px */
+.check-hi { font-size:14px; font-weight:600; color:var(--ink); margin-bottom:4px; }
+.check-en { font-size:14px; font-weight:400; color:var(--muted); line-height:1.5; }
 
 /* WA SEND */
 .wa-action-card { background:var(--navy); padding:28px 32px; margin-bottom:18px; border-left:5px solid var(--wa); position:relative; }
@@ -200,8 +209,9 @@ body { font-family:'DM Sans',sans-serif; background:var(--cream); color:var(--in
 .wa-action-title-hi { font-family:'Cormorant Garamond',serif; font-size:22px; font-weight:600; color:white; margin-bottom:2px; }
 .wa-action-title-hi em { color:var(--gold); font-style:italic; }
 .wa-action-title-en { font-size:12px; color:rgba(255,255,255,.35); margin-bottom:14px; }
+/* CHANGED: both wa-action-desc now 13px */
 .wa-action-desc-hi { font-size:13px; color:rgba(255,255,255,.45); line-height:1.65; margin-bottom:4px; }
-.wa-action-desc-en { font-size:11px; color:rgba(255,255,255,.25); line-height:1.5; margin-bottom:18px; }
+.wa-action-desc-en { font-size:13px; color:rgba(255,255,255,.35); line-height:1.5; margin-bottom:18px; }
 .wa-prefilled { background:rgba(37,211,102,.08); border:1px solid rgba(37,211,102,.25); padding:12px 16px; color:#25D366; font-size:13px; font-weight:500; display:flex; align-items:center; gap:10px; margin-bottom:14px; }
 .wa-btns { display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
 .btn-wa { background:var(--wa); color:white; font-family:'DM Sans',sans-serif; font-size:12px; font-weight:600; letter-spacing:.06em; padding:12px 22px; border:none; cursor:pointer; display:inline-flex; align-items:center; gap:8px; transition:all .2s; }
@@ -236,7 +246,7 @@ body { font-family:'DM Sans',sans-serif; background:var(--cream); color:var(--in
 <body>
 
 <script>
-const SHEET_URL = 'https://script.google.com/macros/s/AKfycbwyuUl77DM3tIYQITZQ6xguMawsZgBrJg6iSxNJGUI-zVUZhA6WOHyyDtnPmLlh3v_5/exec';
+const SHEET_URL = 'https://script.google.com/macros/s/AKfycbzSFjU42lqLI3yEjW57rHTHiIkmKnl6VEMOQCefq6Auw5ANe46DKIOpsvu7suWQYxyS/exec';
 const ADMIN_WA  = '919601603322';
 </script>
 
@@ -311,7 +321,6 @@ const ADMIN_WA  = '919601603322';
       </div>
       <div class="wa-note-hi">🔒 आपका नंबर केवल रिपोर्ट भेजने के लिए उपयोग होगा। <span class="wa-note-en">Used only to send your report. Never shared.</span></div>
 
-      <!-- Sheet connection status -->
       <div id="sheetStatus" style="display:none;padding:9px 13px;font-size:12px;border:1px solid;margin-bottom:14px;align-items:center;gap:7px;"></div>
 
       <button class="btn-start" onclick="startAssessment()">
@@ -342,10 +351,6 @@ const ADMIN_WA  = '919601603322';
 </div>
 
 <script>
-// ════════════════════════════════════════════════════
-// 10 QUESTIONS — Hindi first, English second
-// 1–5 scale | Max = 50
-// ════════════════════════════════════════════════════
 const QS = [
   {
     hi:  "क्या आप बता सकते हैं कि आने वाले 3 सालों में आपकी कंपनी कहाँ जाने वाली है — टर्नओवर, टीम, कस्टमर्स, लोकेशन?",
@@ -452,16 +457,12 @@ const BANDS = [
     next:"एक Shikhar Business Diagnostic आगे स्केल करने के विशिष्ट अवसर और आपने जो बनाया है उससे स्थायी व्यक्तिगत संपत्ति बनाने के तरीके दिखाएगा।" }
 ];
 
-// STATE
 let answers   = new Array(QS.length).fill(null);
 let owner     = {};
 let currentQ  = 0;
 let interests = { assessment_report:false, improvement_roadmap:false, consulting:false };
 let savedPdfLink = '';
 
-// ════════════════════════════════════════
-// SHEET CONNECTION TEST
-// ════════════════════════════════════════
 function testSheetConnection() {
   const el = document.getElementById('sheetStatus');
   const set = (bg,bdr,col,html) => {
@@ -479,13 +480,11 @@ function testSheetConnection() {
 }
 window.addEventListener('load', testSheetConnection);
 
-// SEND TO SHEET
 function sendToSheet(payload) {
   if (!SHEET_URL) return Promise.resolve(null);
   return fetch(SHEET_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)}).catch(e=>console.warn('Sheet:',e));
 }
 
-// UTILS
 function showScreen(id){
   document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
   document.getElementById('sc-'+id).classList.add('active');
@@ -507,9 +506,6 @@ function barColor(s){
   return '#1E5C1E';
 }
 
-// ════════════════════════════════════════
-// START
-// ════════════════════════════════════════
 function startAssessment(){
   const name=document.getElementById('fname').value.trim();
   const wa=document.getElementById('fwa').value.replace(/\D/g,'');
@@ -526,9 +522,6 @@ function startAssessment(){
   setTimeout(()=>{buildQuestions();showScreen('assess');showQ(0);},600);
 }
 
-// ════════════════════════════════════════
-// BUILD QUESTIONS
-// ════════════════════════════════════════
 function buildQuestions(){
   document.getElementById('dotRow').innerHTML=QS.map((_,i)=>`<div class="dot" id="dot${i}" onclick="jumpQ(${i})"></div>`).join('');
   document.getElementById('qContainer').innerHTML=QS.map((q,i)=>`
@@ -591,9 +584,6 @@ function pick(qi,val){
 }
 function advance(i){if(answers[i]===null)return;showQ(i+1);}
 
-// ════════════════════════════════════════
-// BUILD RESULT
-// ════════════════════════════════════════
 function buildResult(){
   const unanswered=answers.findIndex(a=>a===null);
   if(unanswered!==-1){showQ(unanswered);alert(`कृपया सवाल ${unanswered+1} का जवाब दें। / Please answer question ${unanswered+1}.`);return;}
@@ -606,7 +596,6 @@ function buildResult(){
   const str=[...qScores].sort((a,b)=>b.score-a.score).slice(0,3);
   const gaps=[...qScores].filter(d=>d.score<=2).sort((a,b)=>a.score-b.score).slice(0,3);
 
-  // Send completed data to sheet (PDF link comes back async)
   const sheetPayload={
     event:'ASSESSMENT_COMPLETED',timestamp:new Date().toISOString(),
     name:owner.name,business:owner.biz,industry:owner.indus,
@@ -624,7 +613,6 @@ function buildResult(){
 
   const area=document.getElementById('resultArea');
   area.innerHTML=`
-    <!-- SCORE -->
     <div class="score-card">
       <div class="score-date">असेसमेंट पूरा हुआ · ${today}</div>
       <div class="score-who">${owner.name} &nbsp;·&nbsp; ${owner.biz}</div>
@@ -646,7 +634,6 @@ function buildResult(){
       </div>
     </div>
 
-    <!-- BAND -->
     <div class="band-card" style="border-color:${band.bdr};background:${band.bg}">
       <div class="band-headline-hi" style="color:${band.col}">${band.headlinehi}</div>
       <div class="band-headline-en" style="color:${band.col}">${band.headlineen}</div>
@@ -654,7 +641,6 @@ function buildResult(){
       <div class="band-desc-en" style="margin-top:6px">${band.descen}</div>
     </div>
 
-    <!-- DIMENSION BARS -->
     <div class="dim-section">
       <div class="section-label">क्षेत्र के अनुसार स्कोर / Score by Area</div>
       ${qScores.map(d=>`
@@ -668,7 +654,6 @@ function buildResult(){
         </div>`).join('')}
     </div>
 
-    <!-- STRENGTHS & GAPS -->
     <div class="insight-row">
       <div class="insight-box i-str">
         <h4>✓ आपकी ताकत / Strengths</h4>
@@ -680,24 +665,27 @@ function buildResult(){
       </div>
     </div>
 
-    <!-- NEXT STEP -->
     <div class="next-card" style="background:${band.bg};border-color:${band.bdr}">
       <h4 style="color:${band.col}">आपका अगला कदम / Your Next Step</h4>
       <p style="color:#555">${band.next}</p>
     </div>
 
-    <!-- STEP 1: CHECKBOXES -->
+    <!-- STEP 1: CHECKBOXES — with bilingual description -->
     <div class="interest-card">
-      <span class="interest-card h3-hi" style="display:block;font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;color:var(--navy);margin-bottom:2px;">आपको सबसे ज़्यादा क्या मदद करेगा?</span>
-      <span class="interest-card h3-en" style="display:block;font-size:12px;color:var(--muted);margin-bottom:16px;">What would help you most?</span>
-      <p>जो भी लागू हो उसे चुनें — हम आपकी प्राथमिकताएँ रिपोर्ट के साथ नोट करेंगे।<br>
-      <span style="font-size:11px;color:#9A8A76;">Select everything that applies — we'll include your preferences with your report.</span></p>
-      <div class="check-list" style="margin-top:16px;">
+      <span style="display:block;font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;color:var(--navy);margin-bottom:2px;">आपको सबसे ज़्यादा क्या मदद करेगा?</span>
+      <span style="display:block;font-size:13px;color:var(--muted);margin-bottom:16px;">What would help you most right now?</span>
+
+      <div class="interest-desc">
+        <div class="interest-desc-hi">नीचे दिए गए विकल्पों में से जो भी आपके बिज़नेस पर लागू हो, उसे चुनें। आप एक से अधिक विकल्प भी चुन सकते हैं।</div>
+        <div class="interest-desc-en">Select all options that apply to your business. You may choose more than one — we will include your preferences with your personalised report.</div>
+      </div>
+
+      <div class="check-list">
         <div class="check-item" id="ci-report" onclick="toggleInterest('assessment_report','ci-report')">
           <div class="check-box"><span class="check-tick">✓</span></div>
           <div>
             <div class="check-hi">📊 पूरी असेसमेंट रिपोर्ट चाहिए</div>
-            <div class="check-en">Get My Full Assessment Report — detailed PDF with scores, insights & recommendations on WhatsApp.</div>
+            <div class="check-en">Get My Full Assessment Report — detailed PDF with scores, insights &amp; recommendations sent to WhatsApp.</div>
           </div>
         </div>
         <div class="check-item" id="ci-roadmap" onclick="toggleInterest('improvement_roadmap','ci-roadmap')">
@@ -717,7 +705,6 @@ function buildResult(){
       </div>
     </div>
 
-    <!-- STEP 2: SEND -->
     <div class="wa-action-card">
       <div class="wa-action-title-hi">अपनी रिपोर्ट <em>WhatsApp</em> पर भेजें</div>
       <div class="wa-action-title-en">Send your report to WhatsApp</div>
@@ -741,7 +728,6 @@ function buildResult(){
       <div class="wa-confirm" id="waConfirm">✓ WhatsApp खुल गया — Send दबाएँ। Admin को भी सूचना भेजी जा रही है…</div>
     </div>
 
-    <!-- REPORT TEXT -->
     <div class="report-box">
       <div class="section-label" style="margin-bottom:12px;">पूरी रिपोर्ट / Full Report Preview</div>
       <div class="report-pre" id="reportPre"></div>
@@ -758,9 +744,6 @@ function buildResult(){
   setTimeout(()=>document.getElementById('gaugeFill').style.width=pct+'%',200);
 }
 
-// ════════════════════════════════════════
-// INTEREST TOGGLE
-// ════════════════════════════════════════
 function toggleInterest(key,elId){
   interests[key]=!interests[key];
   document.getElementById(elId).classList.toggle('checked',interests[key]);
@@ -773,9 +756,6 @@ function getInterestStr(){
   ].filter(Boolean).join(', ')||'None';
 }
 
-// ════════════════════════════════════════
-// REPORT BUILDER
-// ════════════════════════════════════════
 function makeReport(total,band,qScores,str,gaps,date,pdfLink){
   const bar=s=>'█'.repeat(s)+'░'.repeat(5-s);
   const intLines=[
@@ -840,9 +820,6 @@ _"Only a Happy Entrepreneur is truly Successful."_
 _"केवल एक खुश उद्यमी ही सही मायनों में सफल है।"_`;
 }
 
-// ════════════════════════════════════════
-// SEND WA TO CLIENT + NOTIFY ADMIN
-// ════════════════════════════════════════
 function sendWAClient(){
   const total=answers.reduce((s,a)=>s+a,0);
   const band=BANDS.find(b=>total>=b.min&&total<=b.max)||BANDS[0];
@@ -853,7 +830,6 @@ function sendWAClient(){
   const intStr=getInterestStr();
   const rpt=makeReport(total,band,qScores,str,gaps,today,savedPdfLink);
 
-  // Update sheet with interests
   sendToSheet({
     event:'REPORT_SENT',timestamp:new Date().toISOString(),
     name:owner.name,business:owner.biz,industry:owner.indus,
@@ -868,11 +844,9 @@ function sendWAClient(){
     interests_selected:intStr
   });
 
-  // 1. Open WA for client
   const clientNum=owner.wa.replace('+','');
   window.open(`https://wa.me/${clientNum}?text=${encodeURIComponent(rpt)}`,'_blank');
 
-  // 2. After delay, notify admin
   setTimeout(()=>{
     const adminMsg=buildAdminMsg(total,band,intStr);
     window.open(`https://wa.me/${ADMIN_WA}?text=${encodeURIComponent(adminMsg)}`,'_blank');
